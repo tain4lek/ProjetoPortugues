@@ -1,0 +1,36 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color:#FFFFF0		;
+        }
+        .menu {
+            background-color: #2f9e41;
+            padding: 30px;
+            text-align:inherit;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .menu a:hover {
+            text-decoration:underline;
+        }
+        .content {
+            margin-top: 70px;
+            padding: 20px;
+            text-align: center;
+            background-color:	#FFFFF0	;
+        }
+       
