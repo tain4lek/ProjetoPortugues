@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home </title>
+    <title>Home</title>
+
+    <!-- Font Awesome para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Seu CSS externo -->
     <link rel="stylesheet" href="index.css">
-</head>
-<body>
 </head>
 <body>
     <div class="menu">
@@ -15,15 +18,48 @@
         <a href="servicos.html">Serviços</a>
         <a href="#">Contato</a>
     </div>
+
     <div class="content">
-        <h1>Bem-vindo(a) à nossa página! oiiiiiiiii</h1>
-        
+        <h1>Bem-vindo(a) à nossa página!</h1>
+
+        <!-- Ícones com títulos -->
+    <div class="icon-grid" style="margin-top: 100px;"> 
+            <div class="icon-box" onclick="selectIcon(this)">
+                <div style="text-align: center;">
+                    <a href="http://www.birigui.sp.gov.br/birigui/controle/arquivo/itinerarios.pdf" class="icon">
+                        <img src="img/bus-alt (1).png" alt="" width="40px" height="40px">
+                    </a>
+                    <p>Itinerarios de Birigui</p>
+                </div>
+            </div>
+            <div class="icon-box" onclick="selectIcon(this)">
+                <div style="text-align: center;">
+                    <a href="telefones.html" >
+                    <img src="img/chamada-telefonica (1).png" alt width="40px" height="40px"> </a>
+                    <p>Telefones uteis</p>
+                </div>
+            </div>
+            <div class="icon-box" onclick="selectIcon(this)">
+                <div style="text-align: center;">
+                    <i class="fas fa-cog"></i>
+                    <p>Configurações</p>
+                </div>
+            </div>
+            <div class="icon-box" onclick="selectIcon(this)">
+                <div style="text-align: center;">
+                    <i class="fas fa-envelope"></i>
+                    <p>Mensagens</p>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <script>
+        function selectIcon(selectedBox) {
+            const boxes = document.querySelectorAll('.icon-box');
+            boxes.forEach(box => box.classList.remove('selected'));
+            selectedBox.classList.add('selected');
+        }
+    </script>
 </body>
 </html>
-
-</body>
-</html>
-
-
-
