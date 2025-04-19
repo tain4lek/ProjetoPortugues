@@ -4,11 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-
-    <!-- Font Awesome para os ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <!-- Seu CSS externo -->
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -21,8 +16,9 @@
 
     <div class="content">
         <h1>Bem-vindo(a) à nossa página!</h1>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, repellendus rem. Perspiciatis laboriosam, nesciunt sapiente veniam minus perferendis, consequuntur dolorem, culpa quod libero alias explicabo esse omnis praesentium tempore? Est.</h2>
 
-        <!-- Ícones com títulos -->
+
     <div class="icon-grid" style="margin-top: 100px;"> 
             <div class="icon-box" onclick="selectIcon(this)">
                 <div style="text-align: center;">
@@ -41,14 +37,14 @@
             </div>
             <div class="icon-box" onclick="selectIcon(this)">
                 <div style="text-align: center;">
-                    <i class="fas fa-cog"></i>
-                    <p>Configurações</p>
+                    <img src="img/construcao-de-casas.png" alt="" width="40px" height="40px">
+                    <p>Imobiliarias em Birigui</p>
                 </div>
             </div>
             <div class="icon-box" onclick="selectIcon(this)">
                 <div style="text-align: center;">
-                    <i class="fas fa-envelope"></i>
-                    <p>Mensagens</p>
+                    <img src="img/localizacao-da-camada-terrestre.png" alt="" width="40px" height="40px">
+                    <p>Mapa do IF</p>
                 </div>
             </div>
         </div>
@@ -56,7 +52,6 @@
 
     <script>
         function selectIcon(selectedBox) {
-            const boxes = document.querySelectorAll('.icon-box');
             boxes.forEach(box => box.classList.remove('selected'));
             selectedBox.classList.add('selected');
         }
