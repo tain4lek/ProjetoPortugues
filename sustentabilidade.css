@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #FFFFF0;
+}
+
+.menu {
+    background-color: #2f9e41;
+    padding: 30px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin-top: 120px; /* Compensando menu fixo */
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.inf1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.p1 {
+    flex: 1;
+    min-width: 250px;
+    margin-right: 20px;
+}
+
+.img1 img {
+    width: 100%;
+    max-width: 400px;
+    height: auto; /* Deixe a altura automática para ser responsiva */
+    border-radius: 10px;
+}
+
+.ini {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.img2 {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.img2 img {
+    width: 100%;
+    max-width: 480px;
+    height: auto; /* Altura automática para responsividade */
+    border-radius: 10px;
+}
+
+.img2 p {
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: #333;
+}
+
+.p2 {
+    flex: 2;
+    min-width: 300px;
+}
+
+h1, h2, h3, h4 {
+    color: #2f9e41;
+    margin-bottom: 0.5em;
+}
+
+p {
+    color: #333;
+    line-height: 1.6;
+}
+footer{
+    
+    background-color: rgb(156, 156, 156);
+    height: 100px;
+    max-width: 100%;
+}
+footer p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .menu a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .inf1, .ini {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .p1, .p2, .img1, .img2 {
+        margin-right: 0;
+        flex: 1 1 100%;
+    }
+
+    .img1 img, .img2 img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        padding: 20px;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+}
